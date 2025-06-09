@@ -8,7 +8,7 @@ export class LoginData {
   static get invalidCredentials() {
     return {
       username: "ext-freygom",
-      password: "Fer1123@",
+      password: "1234567890",
     };   
 
   }

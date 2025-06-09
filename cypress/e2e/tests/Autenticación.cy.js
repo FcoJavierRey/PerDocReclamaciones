@@ -8,7 +8,7 @@ describe(PerDocReclamacionesData.testSuites.autenticacion, () => {
     it("Usuario autorizado a funcionalidad", () => {
     Logger.stepNumber(1);
     Logger.step("Navegar a la página de inicio");
-    PerDocReclamacionesMethods.navigatePerDocReclamaciones();
+    PerDocReclamacionesMethods.navigatePerDocReclamaciones1();
         
     Logger.stepNumber(2);
     Logger.step("Ingresar un nombre de usuario autorizado");
@@ -18,8 +18,25 @@ describe(PerDocReclamacionesData.testSuites.autenticacion, () => {
     Logger.stepNumber(3);
     Logger.step('Hacer clic en "Conectar" para iniciar sesión');
     LoginMethods.clickOnLoginButton();
-    Logger.verification("Verificar que se muestra la página de Selección de Fases");
+    Logger.verification("Verificar que se muestra la página de Inicio Sesión exitoso");
     LoginMethods.verifyUser();
+  });
+
+  it("Credenciales inválidas", () => {
+    Logger.stepNumber(1);
+    Logger.step("Navegar a la página de inicio");
+    PerDocReclamacionesMethods.navigatePerDocReclamaciones1();
+        
+    Logger.stepNumber(2);
+    Logger.step("Ingresar credenciales no válidas");
+    LoginMethods.insertUsername(LoginData.invalidCredentials.username);
+    LoginMethods.insertPassword(LoginData.invalidCredentials.password);
+
+    Logger.stepNumber(3);
+    Logger.step('Hacer clic en "Conectar" para iniciar sesión');
+    LoginMethods.clickOnLoginButton();
+    Logger.verification("Verificar que se muestra el mensaje Credenciales Inválidas");
+    LoginMethods.verifyAlert();
   });
 
    

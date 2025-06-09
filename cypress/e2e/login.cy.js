@@ -8,7 +8,7 @@ describe('PerDocReclamaciones: Login de usuario', ()=>{
     it('Login de usuario'), (username, password)=>{
             Logger.stepNumber(1);
             Logger.step("Navegar a la página de inicio de sesión");
-            PerDocReclamacionesMethods.navigatePerDocReclamaciones();
+            PerDocReclamacionesMethods.navigatePerDocReclamaciones1();
                 
             Logger.stepNumber(2);
             Logger.subStep("Ingresar un nombre de usuario y contraseña válidos");
