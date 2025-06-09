@@ -3,7 +3,7 @@ export class LoginElements {
     return {
       get username() {
         return cy.get('input#username');
-      },
+        },
       get password() {
         return cy.get('input#password');
       },
@@ -14,7 +14,7 @@ export class LoginElements {
     return {
       get login() {
         return cy.get('button#boton-login');
-      },
+        },
   }
   }
 
@@ -23,7 +23,7 @@ export class LoginElements {
   }
 
    static get validUser() {
-    return cy.contains('td', 'Consulta de Nóminas e IRPF');
+       return cy.contains('h2', 'Inicio de sesión exitoso');
   }  
 }
 

@@ -1,27 +1,22 @@
 
-import { PerDocReclamacionesData } from "../Pages/PerDocReclamaciones/PerDocReclamaciones-page.data";
+import { PerDocReclamacionesData } from "../Pages/PerDocReclamacionesPage/PerDocReclamaciones-page.data";
 import { LoginData } from "../pages/login/login.data";
 import { LoginMethods } from "../pages/login/login.methods";
 import { Logger } from "../util/logger";
+import { PerDocReclamacionesMethods } from "../Pages/PerDocReclamacionesPage/PerDocReclamaciones-page.methods";
 
 describe(PerDocReclamacionesData.testSuites.SeleccionFases, () => {
 
   it("Selección de Fases", () => {
     Logger.stepNumber(1);
-    Logger.step("Navegar a la página de inicio");
-    NominillasInterMethods.navigateToNominillasInter();
+     Logger.step("Navegar a la página de inicio");
+     PerDocReclamacionesMethods.navigatePerDocReclamaciones();
     
     Logger.stepNumber(2);
-    Logger.step("Iniciar Sesión en NominillasInter");
+    Logger.step("Iniciar Sesión en PerDocReclamaciones");
     LoginMethods.login(LoginData.validCredentials.username, LoginData.validCredentials.password )
-    Logger.verification("Verificar que se muestra la página de Consulta de Nóminas e IRPF");
+    Logger.verification("Verificar que se muestra la página de Selección de Fases");
     LoginMethods.verifyUser();
-
-    Logger.stepNumber(3);
-    Logger.step("Hacer clic en botón Ver Retenciones");
-    NominillasInterMethods.clicOnVerRetenciones();
-    Logger.verification("Verificar que se muestra la página de Certificado de Retenciones");
-    NominillasInterMethods.navigateToCertificadoOk()
-  });
+     });
 
 });

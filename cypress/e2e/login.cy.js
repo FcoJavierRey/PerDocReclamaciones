@@ -1,14 +1,14 @@
 
+import { PerDocReclamacionesMethods } from "./Pages/PerDocReclamacionesPage/PerDocReclamaciones-page.methods";
 import { LoginData } from "./pages/login/login.data";
 import { LoginMethods } from "./pages/login/login.methods";
-import { NominillasInterMethods } from "./Pages/NominillasInterPage/NominillasInter-page.methods";
 import { Logger } from "./util/logger";
 
 describe('PerDocReclamaciones: Login de usuario', ()=>{
     it('Login de usuario'), (username, password)=>{
             Logger.stepNumber(1);
             Logger.step("Navegar a la página de inicio de sesión");
-            NominillasInterMethods.navigateToNominillasInter();
+            PerDocReclamacionesMethods.navigatePerDocReclamaciones();
                 
             Logger.stepNumber(2);
             Logger.subStep("Ingresar un nombre de usuario y contraseña válidos");
@@ -21,6 +21,6 @@ describe('PerDocReclamaciones: Login de usuario', ()=>{
            
             Logger.stepNumber(4); 
             Logger.subStep("Comprobar que muestra pantalla PerDocReclamaciones");  
-            NominillasInterMethods.verifyPermisos();
+            PerDocReclamacionesMethods.verifyPermisos();
     }
 })

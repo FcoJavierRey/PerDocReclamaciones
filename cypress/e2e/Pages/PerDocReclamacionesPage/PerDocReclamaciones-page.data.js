@@ -1,7 +1,7 @@
 export class PerDocReclamacionesData {
 
 static get url() {
-    return "https://wwwpre.educacion.org/educacion/certificados/nominillasinter/scripts/nominillas.asp";
+    return "https://wwwpre.educacion.org/educacion/PERDOC/PerDocReclamaciones/Acceso/";
   };
 
 static get urlRevision() {
