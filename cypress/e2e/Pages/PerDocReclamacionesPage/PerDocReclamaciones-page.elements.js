@@ -14,6 +14,10 @@ export class PerDocReclamacionesElements {
         return  cy.get('a[href="/educacion/PERDOC/PerDocReclamaciones/Acceso/SignOut"]');
          },
 
+       get  Solicitudes() {
+        return  cy.get('a[title="Solicitudes"]');
+         },  
+
     };
   }
   

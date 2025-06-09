@@ -18,7 +18,7 @@ static get testSuites() {
     return {
       registro: "Registro",
       autenticacion: "PerDocReclamaciones: Autenticación",
-      SeleccionFases: "PerDocReclamaciones: Selección de fases",
+      SeleccionFases: "PerDocReclamaciones: Selección de Solicitudes",
       };
   }
 

@@ -25,6 +25,9 @@ static clicOnSeleccionFases() {
     PerDocReclamacionesElements.Menu.CerrarSesion.click();
   }
 
+    static clicOnSolicitudes() {
+    PerDocReclamacionesElements.Menu.Solicitudes.click();
+  }
  static verifyCierreSesion() {
     PerDocReclamacionesElements.CierreSesionOK.should('exist');
   } 
