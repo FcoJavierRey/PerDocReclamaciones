@@ -23,8 +23,28 @@ describe(PerDocReclamacionesData.testSuites.SeleccionFases, () => {
     PerDocReclamacionesMethods.navigatePerDocReclamaciones();
     PerDocReclamacionesMethods.clicOnSeleccionFases();
     Logger.verification("Verificar que se muestra la página de nueva Solicitud");
-    cy.location('pathname').should('contains', 'PerDocReclamaciones/Formulario/NuevaSolicitud');
-   
+    // Si no se ha registrado ninguna solicitud:
+    // cy.location('pathname').should('contains', 'PerDocReclamaciones/Formulario/NuevaSolicitud');
+    // Si ya se ha registrado alguna solicitud:
+    cy.location('pathname').should('contains', 'PERDOC/PerDocReclamaciones/Reclamaciones');
+
+    Logger.stepNumber(4);
+    Logger.step("Presentar Solicitud");
+    Logger.subStep("Pulsar Nueva Solicitud");
+    PerDocReclamacionesMethods.clicOnNuevaSolicitud();
+    Logger.verification("Verificar que se muestra la página Nueva Solicitud");
+    PerDocReclamacionesMethods.verPresentarSolicitud();
+    Logger.subStep("Rellenar Motivo y Solicita");
+    PerDocReclamacionesMethods.RellenarMotivo();
+    PerDocReclamacionesMethods.RellenarSolicita();
+    Logger.subStep("Pulsar Presentar Solicitud");
+    PerDocReclamacionesMethods.clicOnPresentarSolicitud();
+    Logger.subStep("Pantalla Confirmar Solicitud");
+    PerDocReclamacionesMethods.verConfirmarSolicitud();
+    PerDocReclamacionesMethods.clicOnConfirmarSolicitud();
+    Logger.verification("Verificar que se muestra la página de Solicitudes");
+      cy.location('pathname').should('contains', '/PERDOC/PerDocReclamaciones/Formulario/NuevaSolicitud');
+  
      });
 
   it("Pantalla de Solicitudes", () => {

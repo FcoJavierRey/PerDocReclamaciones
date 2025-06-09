@@ -15,9 +15,9 @@ export class PerDocReclamacionesElements {
          },
 
        get  Solicitudes() {
-        return  cy.get('a[title="Solicitudes"]');
+        return  cy.contains('text', 'Solicitudes');
          },  
-
+      
     };
   }
   
@@ -32,4 +32,26 @@ export class PerDocReclamacionesElements {
     return cy.contains('h2', 'Cierre de sesión exitoso');
   }
 
-}
+
+ static get PresentarSolicitud() {
+    return cy.get('button[id="btn-presentar"] div');
+ }
+
+
+  static get NuevaSolicitud() {
+    return cy.get('button#addReclamacion');
+ }
+
+  static get  Motivo() {
+        return  cy.get('select#IdMotivo');
+  }
+
+  static get  Solicita() {
+        return  cy.get('textarea#Solicita');
+    }
+  static get  ConfirmarSolicitud() {
+        return  cy.get('div.modal-footer button').eq(0);
+         };          
+
+  }       
+
