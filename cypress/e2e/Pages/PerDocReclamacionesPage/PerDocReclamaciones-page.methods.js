@@ -41,7 +41,7 @@ static clicOnSeleccionFases() {
     PerDocReclamacionesElements.ConfirmarSolicitud.click();
   }
 
- static verifyCierreSesion() {
+   static verifyCierreSesion() {
     PerDocReclamacionesElements.CierreSesionOK.should('exist');
   } 
    static verifyPermisos() {

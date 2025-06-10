@@ -49,9 +49,11 @@ export class PerDocReclamacionesElements {
   static get  Solicita() {
         return  cy.get('textarea#Solicita');
     }
+
   static get  ConfirmarSolicitud() {
         return  cy.get('div.modal-footer button').eq(0);
          };          
 
+       
   }       
 

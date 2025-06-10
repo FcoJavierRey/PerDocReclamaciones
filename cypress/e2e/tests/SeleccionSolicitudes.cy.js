@@ -67,5 +67,5 @@ describe(PerDocReclamacionesData.testSuites.SeleccionFases, () => {
     cy.location('pathname').should('contains', 'PERDOC/PerDocReclamaciones/Reclamaciones');
      });
 
- 
+    
 });
