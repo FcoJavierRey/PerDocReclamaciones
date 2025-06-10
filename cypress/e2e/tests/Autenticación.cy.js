@@ -39,5 +39,25 @@ describe(PerDocReclamacionesData.testSuites.autenticacion, () => {
     LoginMethods.verifyAlert();
   });
 
+  it("Cerrar sesión SUA", () => {
+    Logger.stepNumber(1);
+     Logger.step("Navegar a la página de inicio");
+     PerDocReclamacionesMethods.navigatePerDocReclamaciones1();
+    
+    Logger.stepNumber(2);
+    Logger.step("Iniciar Sesión en PerDocReclamaciones");
+    LoginMethods.login(LoginData.validCredentials.username, LoginData.validCredentials.password )
+    Logger.verification("Verificar que se ha logueado en SUA correctamente");
+    LoginMethods.verifyUser();
+
+    Logger.stepNumber(4);
+    Logger.step("Cerrar sesión");
+    PerDocReclamacionesMethods.navigatePerDocReclamaciones();
+    PerDocReclamacionesMethods.clicOnDesplegarUsuario();
+    PerDocReclamacionesMethods.clicOnCerrarSesion();
+    Logger.verification("Verificar que se muestra la página de Cierre de sesión exitoso");
+    PerDocReclamacionesMethods.verifyCierreSesion();
+    
+     });
    
 });
