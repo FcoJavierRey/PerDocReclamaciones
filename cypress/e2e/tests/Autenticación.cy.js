@@ -1,5 +1,5 @@
-import { LoginMethods } from "../pages/login/login.methods";
-import { LoginData } from "../pages/login/login.data";
+import { LoginMethods } from "../Pages/login/login.methods";
+import { LoginData } from "../Pages/login/login.data";
 import { Logger } from "../util/logger";
 import { PerDocReclamacionesData } from "../Pages/PerDocReclamacionesPage/PerDocReclamaciones-page.data";
 import { PerDocReclamacionesMethods } from "../Pages/PerDocReclamacionesPage/PerDocReclamaciones-page.methods";
