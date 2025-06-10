@@ -11,6 +11,10 @@ export class LoginMethods{
         LoginElements.textboxes.password.invoke('val', password)
     }
 
+    static insertNifUsuario(NifUsuario){
+        LoginElements.textboxes.NifUsuario.invoke('val', NifUsuario)
+    }
+
     static clickOnLoginButton(){
         LoginElements.buttons.login.click()
     }
@@ -30,7 +34,9 @@ export class LoginMethods{
 
     static verifyUser() {
     LoginElements.validUser.should('exist');
-   
-  }
-  
+   }
+
+   static verLoginSupervisor() {
+    LoginElements.LoginSupervisor.should('exist');
+    }
 }

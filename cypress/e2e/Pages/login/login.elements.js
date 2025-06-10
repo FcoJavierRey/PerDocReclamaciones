@@ -7,6 +7,11 @@ export class LoginElements {
       get password() {
         return cy.get('input#password');
       },
+
+       get NifUsuario() {
+        return cy.get('input#NifUsuario');
+      },
+
     };
   }
 
@@ -28,6 +33,10 @@ export class LoginElements {
 
   static get validUrl() {
      return cy.contains('h2', 'Selección de fases');
+  }
+
+   static get LoginSupervisor() {
+    return cy.contains('h1', 'Reclamaciones');
   }
 }
 

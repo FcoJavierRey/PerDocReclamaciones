@@ -21,8 +21,17 @@ static clicOnSeleccionFases() {
     PerDocReclamacionesElements.Menu.DesplegarUsuario.click();
   }
 
+  static clicOnDesplegarSupervisor() {
+    PerDocReclamacionesElements.Menu.DesplegarSupervisor.click();
+  }
+
+
   static clicOnCerrarSesion() {
     PerDocReclamacionesElements.Menu.CerrarSesion.click();
+  }
+
+  static  clicOnBotonAdministracion() {
+    PerDocReclamacionesElements.Menu.BotonAdministracion.click();
   }
 
   static clicOnSolicitudes() {
@@ -53,10 +62,14 @@ static clicOnSeleccionFases() {
 static verConfirmarSolicitud() {
     PerDocReclamacionesElements.ConfirmarSolicitud.should('exist');
   }  
-  
+
 
    static clicOnNuevaSolicitud() {
     PerDocReclamacionesElements.NuevaSolicitud.click();
+  }
+
+static clicOnBotonEntrar() {
+    PerDocReclamacionesElements.BotonEntrar.click();
   }
 
   static RellenarMotivo() {

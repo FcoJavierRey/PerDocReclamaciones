@@ -16,9 +16,9 @@ static get urlNuevaSolicitud() {
  
 static get testSuites() {
     return {
-      registro: "Registro",
-      autenticacion: "PerDocReclamaciones: Autenticación",
-      SeleccionFases: "PerDocReclamaciones: Selección de Solicitudes",
+      autenticacion: "PerDocReclamaciones: Autenticación USUARIO",
+      SeleccionFases: "PerDocReclamaciones: Selección de Fases SUPERVISOR",
+      SeleccionSolicitudes: "PerDocReclamaciones: Selección de Solicitudes USUARIO",
       };
   }
 

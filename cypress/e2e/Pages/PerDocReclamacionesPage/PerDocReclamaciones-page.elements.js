@@ -9,9 +9,17 @@ export class PerDocReclamacionesElements {
       get  DesplegarUsuario() {
         return cy.get('a[data-toggle="dropdown"]');
          },
+    
+      get  DesplegarSupervisor() {
+        return cy.get('a[role="button"] span');
+         },   
 
        get  CerrarSesion() {
         return  cy.get('a[href="/educacion/PERDOC/PerDocReclamaciones/Acceso/SignOut"]');
+         },
+
+       get  BotonAdministracion() {
+        return  cy.get('a[href="/educacion/PERDOC/PerDocReclamaciones/Administrador"]');
          },
 
        get  Solicitudes() {
@@ -50,9 +58,15 @@ export class PerDocReclamacionesElements {
         return  cy.get('textarea#Solicita');
     }
 
+  static get  BotonEntrar() {
+        return  cy.get('button[type="submit"]');
+    }  
+    
   static get  ConfirmarSolicitud() {
         return  cy.get('div.modal-footer button').eq(0);
-         };          
+         };    
+  
+     
 
        
   }       

@@ -5,7 +5,7 @@ import { LoginMethods } from "../Pages/login/login.methods";
 import { Logger } from "../util/logger";
 import { PerDocReclamacionesMethods } from "../Pages/PerDocReclamacionesPage/PerDocReclamaciones-page.methods";
 
-describe(PerDocReclamacionesData.testSuites.SeleccionFases, () => {
+describe(PerDocReclamacionesData.testSuites.SeleccionSolicitudes, () => {
 
   it("Nueva Solicitud", () => {
     Logger.stepNumber(1);
