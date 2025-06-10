@@ -1,7 +1,7 @@
 
 import { PerDocReclamacionesMethods } from "./Pages/PerDocReclamacionesPage/PerDocReclamaciones-page.methods";
-import { LoginData } from "./pages/login/login.data";
-import { LoginMethods } from "./pages/login/login.methods";
+import { LoginData } from "./Pages/login/login.data";
+import { LoginMethods } from "./Pages/login/login.methods";
 import { Logger } from "./util/logger";
 
 describe('PerDocReclamaciones: Login de usuario', ()=>{
