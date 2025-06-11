@@ -15,7 +15,7 @@ describe(PerDocReclamacionesData.testSuites.SeleccionFases, () => {
     Logger.stepNumber(2);
     Logger.step("Iniciar Sesión en PerDocReclamaciones");
     LoginMethods.login(LoginData.SupervisorCredentials.username, LoginData.SupervisorCredentials.password )
-    Logger.verification("Verificar que se ha logueado como Supervisor correctamente");
+    Logger.verification("Verificar que se ha conectado como Supervisor correctamente");
     LoginMethods.verifyUser();
 
     Logger.stepNumber(3);
@@ -35,7 +35,7 @@ describe(PerDocReclamacionesData.testSuites.SeleccionFases, () => {
     Logger.stepNumber(2);
     Logger.step("Iniciar Sesión en PerDocReclamaciones");
     LoginMethods.login(LoginData.SupervisorCredentials.username, LoginData.SupervisorCredentials.password )
-    Logger.verification("Verificar que se ha logueado como Supervisor correctamente");
+    Logger.verification("Verificar que se ha conectado como Supervisor correctamente");
     LoginMethods.verifyUser();
 
     Logger.stepNumber(3);
@@ -62,7 +62,7 @@ describe(PerDocReclamacionesData.testSuites.SeleccionFases, () => {
     Logger.stepNumber(2);
     Logger.step("Iniciar Sesión en PerDocReclamaciones");
     LoginMethods.login(LoginData.SupervisorCredentials.username, LoginData.SupervisorCredentials.password )
-    Logger.verification("Verificar que se ha logueado como Supervisor correctamente");
+    Logger.verification("Verificar que se ha conectado como Supervisor correctamente");
     LoginMethods.verifyUser();
 
     Logger.stepNumber(3);
@@ -109,7 +109,7 @@ describe(PerDocReclamacionesData.testSuites.SeleccionFases, () => {
     Logger.stepNumber(2);
     Logger.step("Iniciar Sesión en PerDocReclamaciones");
     LoginMethods.login(LoginData.SupervisorCredentials.username, LoginData.SupervisorCredentials.password )
-    Logger.verification("Verificar que se ha logueado como Supervisor correctamente");
+    Logger.verification("Verificar que se ha conectado como Supervisor correctamente");
     LoginMethods.verifyUser();
 
     Logger.stepNumber(3);
@@ -154,7 +154,7 @@ describe(PerDocReclamacionesData.testSuites.SeleccionFases, () => {
     Logger.stepNumber(2);
     Logger.step("Iniciar Sesión en PerDocReclamaciones");
     LoginMethods.login(LoginData.SupervisorCredentials.username, LoginData.SupervisorCredentials.password )
-    Logger.verification("Verificar que se ha logueado como Supervisor correctamente");
+    Logger.verification("Verificar que se ha conectado como Supervisor correctamente");
     LoginMethods.verifyUser();
 
     Logger.stepNumber(3);

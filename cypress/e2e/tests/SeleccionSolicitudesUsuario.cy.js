@@ -15,7 +15,7 @@ describe(PerDocReclamacionesData.testSuites.SeleccionSolicitudes, () => {
     Logger.stepNumber(2);
     Logger.step("Iniciar Sesión en PerDocReclamaciones");
     LoginMethods.login(LoginData.validCredentials.username, LoginData.validCredentials.password )
-    Logger.verification("Verificar que se ha logueado en SUA correctamente");
+    Logger.verification("Verificar que se ha conectado en SUA correctamente");
     LoginMethods.verifyUser();
 
     Logger.stepNumber(3);
@@ -55,7 +55,7 @@ describe(PerDocReclamacionesData.testSuites.SeleccionSolicitudes, () => {
     Logger.stepNumber(2);
     Logger.step("Iniciar Sesión en PerDocReclamaciones");
     LoginMethods.login(LoginData.validCredentials.username, LoginData.validCredentials.password )
-    Logger.verification("Verificar que se ha logueado en SUA correctamente");
+    Logger.verification("Verificar que se ha conectado en SUA correctamente");
     LoginMethods.verifyUser();
 
     Logger.stepNumber(3);
