@@ -9,6 +9,10 @@ export class PerDocReclamacionesElements {
       get  DesplegarUsuario() {
         return cy.get('a[data-toggle="dropdown"]');
          },
+
+       get  SeleccionarNuevaSolicitud() {
+        return cy.get('h5.card-title').eq(0);
+         },
     
       get  DesplegarSupervisor() {
         return cy.get('a[role="button"] span');
@@ -66,7 +70,9 @@ export class PerDocReclamacionesElements {
         return  cy.get('div.modal-footer button').eq(0);
          };    
   
-     
+  static get  BotonGenerarPDF() {
+        return  cy.contains('a', 'Generar PDF');
+    }     
 
        
   }       

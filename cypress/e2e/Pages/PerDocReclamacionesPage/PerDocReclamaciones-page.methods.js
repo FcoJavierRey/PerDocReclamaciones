@@ -13,8 +13,12 @@ export class PerDocReclamacionesMethods {
     cy.visit(PerDocReclamacionesData.url);
  }
 
-static clicOnSeleccionFases() {
+  static clicOnSeleccionFases() {
     PerDocReclamacionesElements.Menu.VerSeleccionFases.click();
+  }
+
+  static clicOnSeleccionarNuevaSolicitud() {
+    PerDocReclamacionesElements.Menu.SeleccionarNuevaSolicitud.click();
   }
 
   static clicOnDesplegarUsuario() {
@@ -46,7 +50,11 @@ static clicOnSeleccionFases() {
     PerDocReclamacionesElements.NuevaSolicitud.click();
   }
 
-    static clicOnConfirmarSolicitud() {
+    static clicOnGenerarPDF() {
+    PerDocReclamacionesElements.BotonGenerarPDF.click();
+  }
+
+   static clicOnConfirmarSolicitud() {
     PerDocReclamacionesElements.ConfirmarSolicitud.click();
   }
 
@@ -59,7 +67,7 @@ static clicOnSeleccionFases() {
   static verPresentarSolicitud() {
     PerDocReclamacionesElements.PresentarSolicitud.should('exist');
   }  
-static verConfirmarSolicitud() {
+  static verConfirmarSolicitud() {
     PerDocReclamacionesElements.ConfirmarSolicitud.should('exist');
   }  
 
