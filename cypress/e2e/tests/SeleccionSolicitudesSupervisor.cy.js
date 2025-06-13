@@ -162,7 +162,7 @@ describe(PerDocReclamacionesData.testSuites.SeleccionFases, () => {
     PerDocReclamacionesMethods.navigatePerDocReclamaciones();
     LoginMethods.insertNifUsuario(LoginData.NifUsuariosample.NifUsuario)
     PerDocReclamacionesMethods.clicOnBotonEntrar();
-    Logger.verification("Verificar que se muestra la página de Selección de Fases");
+    Logger.verification("Verificar que se muestra la página Selección de Fases");
     cy.location('pathname').should('contains', 'educacion/PERDOC/PerDocReclamaciones/Fases');
 
     Logger.stepNumber(4);
